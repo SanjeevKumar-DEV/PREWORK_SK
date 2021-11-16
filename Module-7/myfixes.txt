@@ -1,0 +1,114 @@
+1. Missing h1 tag 
+
+Before
+
+Boo The Dog Fan Page!
+
+After
+<h1>Boo The Dog Fan Page!</h1>
+
+2. IMG tag has angular bracket missing <>
+
+Before IMG
+
+After
+
+<IMG>
+
+3. li tag for list of items in ordered list of items were missing 
+
+Before
+
+<ol>
+ <li>Dressing Up</li>
+ <li>Grass</li> 
+ <li>Sleeping</li>
+ <li>Swimming</li>
+ <li>Hiking</li>
+</ol> 
+
+After
+
+<ol>
+ <li>Dressing Up</li>
+ <li>Grass</li> 
+ <li>Sleeping</li>
+ <li>Swimming</li>
+ <li>Hiking</li>
+</ol> 
+
+4. change error.js file referenced at end of the html file renamed to refer to logic.js file
+
+Before
+
+<script type="text/javascript" src="error.js"></script>
+
+After
+
+<script type="text/javascript" src="logic.js"></script>
+
+5. Fixing syntax error of missing parenthesis
+
+Before
+
+$("#textPink").on("click", function() {
+	$("#funText").css("color", pink)
+})
+
+After
+
+$("#textPink").on("click", function() {
+	$("#funText").css("color", "pink")
+})
+
+6. Fixing logical error
+
+Before
+
+<button class="btn" id="textGreen">Orange</button>
+<button class="btn" id="textOrange">Pink</button>
+<button class="btn" id="textPink">Green</button>
+
+
+After
+
+<button class="btn" id="textGreen">Green</button>
+<button class="btn" id="textOrange">Orange</button>
+<button class="btn" id="textPink">Pink</button>
+
+7. Fixing syntax error of missing parenthesis
+
+Before
+$("#boxGrow").on(click, function() {
+	$("#box").animate({height:"+=35px", 
+		width:"+=35px"}, "fast");
+})
+
+
+After
+$("#boxGrow").on("click", function() {
+	$("#box").animate({height:"+=35px", 
+		width:"+=35px"}, "fast");
+})
+
+8. Fixing syntax error of missing parenthesis
+
+Before
+
+$("#boxShrink").on(click, function() {
+	$("#box").animate({height:"-=35px", width:"-=35px"}, "fast");
+})
+
+$("#boxShrink").on("click", function() {
+	$("#box").animate({height:"-=35px", width:"-=35px"}, "fast");
+})
+
+9. Array items had missing parenthesis
+
+Before
+
+var booFacts = ["Boo is a pomeranian, Boo's best friend is another pomeranian named Buddy, Boo the Pomeranian was born on March 16, making him a Pisces, Boo's favourite food is grass, Boo has released two books" ]
+
+After
+
+var booFacts = ["Boo is a pomeranian", "Boo's best friend is another pomeranian named Buddy", "Boo the Pomeranian was born on March 16", "making him a Pisces", "Boo's favourite food is grass", "Boo has released two books" ]
